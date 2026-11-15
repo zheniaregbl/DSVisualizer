@@ -127,7 +127,7 @@ ApplicationWindow {
             LinkedListPage {}
             BinarySearchTreePage {}
             HeapPage {}
-            StructurePage { group: "Ассоциативные"; title: "Хеш-таблица"; description: "В разработке." }
+            HashTablePage {}
         }
     }
 

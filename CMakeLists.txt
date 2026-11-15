@@ -34,12 +34,16 @@ qt_add_qml_module(appDSVisualizer
         qml/LinkedListPage.qml
         qml/BinarySearchTreePage.qml
         qml/HeapPage.qml
+        qml/HashTablePage.qml
     SOURCES
         src/core/ArrayStack.h
         src/core/ArrayQueue.h
         src/core/SinglyLinkedList.h
         src/core/BinarySearchTree.h
         src/core/MinHeap.h
+        src/core/HashTable.h
+        src/model/HashTableModel.h
+        src/model/HashTableModel.cpp
         src/model/HeapModel.h
         src/model/HeapModel.cpp
         src/model/BinarySearchTreeModel.h
