@@ -30,6 +30,7 @@ qt_add_qml_module(appDSVisualizer
         qml/components/DsInput.qml
         qml/components/StructurePage.qml
         qml/StackPage.qml
+        qml/ArrayPage.qml
         qml/QueuePage.qml
         qml/LinkedListPage.qml
         qml/BinarySearchTreePage.qml
@@ -37,6 +38,9 @@ qt_add_qml_module(appDSVisualizer
         qml/HashTablePage.qml
     SOURCES
         src/core/ArrayStack.h
+        src/core/DynamicArray.h
+        src/model/ArrayModel.h
+        src/model/ArrayModel.cpp
         src/core/ArrayQueue.h
         src/core/SinglyLinkedList.h
         src/core/BinarySearchTree.h
@@ -83,3 +87,4 @@ install(TARGETS appDSVisualizer
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+

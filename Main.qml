@@ -54,6 +54,7 @@ ApplicationWindow {
                 interactive: false
                 spacing: 2
                 model: ListModel {
+                    ListElement { name: "Массив"; key: "[i]"; group: "Линейные" }
                     ListElement { name: "Стек";            key: "LIFO"; group: "Линейные" }
                     ListElement { name: "Очередь";         key: "FIFO"; group: "Линейные" }
                     ListElement { name: "Связный список";  key: "→";    group: "Линейные" }
@@ -122,6 +123,7 @@ ApplicationWindow {
             onCurrentIndexChanged: viewIn.restart()
             transform: Translate { id: shift }
 
+            ArrayPage {}
             StackPage {}
             QueuePage {}
             LinkedListPage {}
@@ -137,3 +139,4 @@ ApplicationWindow {
         NumberAnimation { target: shift; property: "y"; from: 8; to: 0; duration: 400; easing.type: Easing.OutCubic }
     }
 }
+
