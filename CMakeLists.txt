@@ -32,10 +32,14 @@ qt_add_qml_module(appDSVisualizer
         qml/StackPage.qml
         qml/QueuePage.qml
         qml/LinkedListPage.qml
+        qml/BinarySearchTreePage.qml
     SOURCES
         src/core/ArrayStack.h
         src/core/ArrayQueue.h
         src/core/SinglyLinkedList.h
+        src/core/BinarySearchTree.h
+        src/model/BinarySearchTreeModel.h
+        src/model/BinarySearchTreeModel.cpp
         src/model/StackModel.h
         src/model/StackModel.cpp
         src/model/QueueModel.h

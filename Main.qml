@@ -125,7 +125,7 @@ ApplicationWindow {
             StackPage {}
             QueuePage {}
             LinkedListPage {}
-            StructurePage { group: "Иерархические"; title: "Бинарное дерево поиска"; description: "В разработке." }
+            BinarySearchTreePage {}
             StructurePage { group: "Иерархические"; title: "Куча"; description: "В разработке." }
             StructurePage { group: "Ассоциативные"; title: "Хеш-таблица"; description: "В разработке." }
         }
