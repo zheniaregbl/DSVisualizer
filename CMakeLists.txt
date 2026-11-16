@@ -88,3 +88,9 @@ install(TARGETS appDSVisualizer
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
+
+# Включает CTest и опцию BUILD_TESTING (по умолчанию ON).
+include(CTest)
+if(BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
